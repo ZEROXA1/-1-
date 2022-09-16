@@ -23,6 +23,6 @@ namespace Корягин_1_пр
         public MainWindow()
         {
             InitializeComponent();
-        }
+        }//safsafasfxzczxcxzc
     }
 }
