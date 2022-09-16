@@ -8,4 +8,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="wu.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="wu.ico" />
+  </ItemGroup>
+
 </Project>

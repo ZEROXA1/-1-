@@ -24,5 +24,7 @@ namespace Корягин_1_пр
         {
             InitializeComponent();
         }
+
+       
     }
 }
