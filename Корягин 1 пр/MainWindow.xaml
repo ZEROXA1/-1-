@@ -20,15 +20,15 @@
                 <MenuItem Header="О программе" Click="О_Программе_Click"/>
             </MenuItem>
         </Menu>
-        <Button Content="Выход" HorizontalAlignment="Left" Height="39" Margin="622,150,0,0" VerticalAlignment="Top" Width="58" Click="Выход_Click" />
+        <Button Content="Выход" HorizontalAlignment="Left" Height="39" Margin="625,178,0,0" VerticalAlignment="Top" Width="58" Click="Выход_Click" />
         <TextBox HorizontalAlignment="Left" x:Name="OutArray" Margin="36,303,0,24" Width="161" IsReadOnly="True"/>
         <TextBox HorizontalAlignment="Left" x:Name="OutSqrt" Margin="268,303,0,24" Width="154" IsReadOnly="True"/>
         <TextBox HorizontalAlignment="Left" x:Name="OutPow" Margin="450,303,0,24" Width="154" IsReadOnly="True"/>
         <Label Content="Исходный массив " HorizontalAlignment="Left" Height="30" Margin="36,246,0,0" VerticalAlignment="Top" Width="113"/>
         <Label Content="Корень чисел, больше  0 " HorizontalAlignment="Left" Height="30" Margin="264,246,0,0" VerticalAlignment="Top" Width="162"/>
         <Label Content="Квадрат чисел, меньше 0 " HorizontalAlignment="Left" Height="30" Margin="450,246,0,0" VerticalAlignment="Top" Width="165"/>
-        <Button Content="Расчитать" HorizontalAlignment="Left" Height="38" Margin="592,46,0,0" VerticalAlignment="Top" Width="118" Click="Вычислить_Click" />
-        <TextBox HorizontalAlignment="Left" Height="32" Margin="592,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" x:Name="ItemCount"/>
-        <Label Content="Количество элементов массива" HorizontalAlignment="Left" Height="39" Margin="400,28,0,0" VerticalAlignment="Top" Width="254"/>
+        <Button Content="Расчитать" HorizontalAlignment="Left" Height="38" Margin="595,132,0,0" VerticalAlignment="Top" Width="118" Click="Вычислить_Click" />
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="595,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" x:Name="ItemCount"/>
+        <Label Content="Количество элементов массива" HorizontalAlignment="Left" Height="39" Margin="527,40,0,0" VerticalAlignment="Top" Width="254" RenderTransformOrigin="0.766,0.638"/>
     </Grid>
 </Window>

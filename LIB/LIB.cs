@@ -5,7 +5,7 @@ namespace LIB
     public static class MathString
     {
        
-        public static double[] Array(int count, int min = -5, int max = 5)
+        public static double[] Array(int count, int min = -5, int max = 4)
         {
             double[] array = new double[count];
             Random rnd = new();
@@ -17,10 +17,10 @@ namespace LIB
         }
 
        
-        public static void SignSquare(this double[] array, out string resultSqrt, out string resultPow)
+        public static void SignSquare(this double[] array, out string resSqrt, out string resPow)
         {
-            resultSqrt = String.Empty;
-            resultPow = String.Empty;
+            resSqrt = String.Empty;
+            resPow = String.Empty;
             double sqrt = 0;
             double pow = 0;
 
@@ -29,12 +29,12 @@ namespace LIB
                 if (array[i] > 0)
                 {
                     sqrt = Math.Round(Math.Sqrt(array[i]), 2);
-                    resultSqrt += sqrt + "\r\n";
+                    resSqrt += sqrt + "\r\n";
                 }
                 else if (array[i] < 0)
                 {
                     pow = Math.Pow(array[i], 2);
-                    resultPow += pow + "\r\n";
+                    resPow += pow + "\r\n";
                 }
             }
         }

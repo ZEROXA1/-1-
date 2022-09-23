@@ -35,10 +35,10 @@ namespace Корягин_1_пр
 
         private void Вычислить_Click(object sender, RoutedEventArgs e)
         {
-            bool f1 = Int32.TryParse(ItemCount.Text, out int itemCount);
-            if (!f1)
+            bool q = Int32.TryParse(ItemCount.Text, out int itemCount);
+            if (!q)
             {
-                MessageBox.Show("Данные введены неверно!");
+                MessageBox.Show("Данные введены неверно");
             }
             else
             {
