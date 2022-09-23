@@ -6,13 +6,29 @@
         xmlns:local="clr-namespace:Корягин_1_пр"
         mc:Ignorable="d"
         Title="Корягин 1 пр" Height="450" Width="800" Icon="/wu.ico" ResizeMode="CanMinimize">
-    <Grid>
-        <Button Content="О ПРОГРАММЕ" HorizontalAlignment="Left" Margin="493,321,0,0" VerticalAlignment="Top" Height="41" Width="93" Click="Button_Click"/>
-        <TextBox HorizontalAlignment="Left" Margin="599,98,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="170" Height="46"/>
-        <TextBox HorizontalAlignment="Left" Margin="599,166,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="170" Height="51"/>
-        <Button Content="РАСЧЕТ" HorizontalAlignment="Left" Margin="599,238,0,0" VerticalAlignment="Top" Width="65" Height="40" Click="Button_Click"/>
-        <Button Content="ВЫХОД" HorizontalAlignment="Left" Margin="632,321,0,0" VerticalAlignment="Top" Width="104" Height="41"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="599,67,0,0" VerticalAlignment="Top" Width="170"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="599,144,0,0" VerticalAlignment="Top" Width="170"/>
+    <Grid >
+        <Menu VerticalAlignment="Top" >
+            <MenuItem Header="Файл">
+                <MenuItem Header="Создать"/>
+                <MenuItem Header="Открыть"/>
+                <MenuItem Header="Сохранить"/>
+                <Separator/>
+                <MenuItem Header="Выход" Click="Выход_Click"/>
+            </MenuItem>
+         
+            <MenuItem Header="Справка">
+                <MenuItem Header="О программе" Click="О_Программе_Click"/>
+            </MenuItem>
+        </Menu>
+        <Button Content="Выход" HorizontalAlignment="Left" Height="39" Margin="622,150,0,0" VerticalAlignment="Top" Width="58" Click="Выход_Click" />
+        <TextBox HorizontalAlignment="Left" x:Name="OutArray" Margin="36,303,0,24" Width="161" IsReadOnly="True"/>
+        <TextBox HorizontalAlignment="Left" x:Name="OutSqrt" Margin="268,303,0,24" Width="154" IsReadOnly="True"/>
+        <TextBox HorizontalAlignment="Left" x:Name="OutPow" Margin="450,303,0,24" Width="154" IsReadOnly="True"/>
+        <Label Content="Исходный массив " HorizontalAlignment="Left" Height="30" Margin="36,246,0,0" VerticalAlignment="Top" Width="113"/>
+        <Label Content="Корень чисел, больше  0 " HorizontalAlignment="Left" Height="30" Margin="264,246,0,0" VerticalAlignment="Top" Width="162"/>
+        <Label Content="Квадрат чисел, меньше 0 " HorizontalAlignment="Left" Height="30" Margin="450,246,0,0" VerticalAlignment="Top" Width="165"/>
+        <Button Content="Расчитать" HorizontalAlignment="Left" Height="38" Margin="592,46,0,0" VerticalAlignment="Top" Width="118" Click="Вычислить_Click" />
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="592,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" x:Name="ItemCount"/>
+        <Label Content="Количество элементов массива" HorizontalAlignment="Left" Height="39" Margin="400,28,0,0" VerticalAlignment="Top" Width="254"/>
     </Grid>
 </Window>

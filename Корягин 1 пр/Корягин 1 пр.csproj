@@ -13,6 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LIB\LIB.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="wu.ico" />
   </ItemGroup>
 
